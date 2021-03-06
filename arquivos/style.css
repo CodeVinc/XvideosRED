@@ -80,14 +80,15 @@ body {
     color: white;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 10pt;
+    font-size: 9pt;
+    color: #c72e26;
 }
 
 #searchButton {
     margin-top: 10px;
     margin-left: .5vw;
-    width: 150px;
-    height: 43px;
+    width: 200px;
+    height: 50px;
     background-color: #c72e26;
     border-color: #c72e26;
     font-weight: 600;
