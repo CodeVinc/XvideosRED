@@ -16,14 +16,14 @@ function hencrypt(c,e){return Aes.Ctr.encrypt(c,e,256)}function hdecrypt(c,e){re
 
 async function decrypt() {
 
-    var val = document.getElementById("text").value;
+    var val = document.getElementById("shearchURL").value;
 
-    if( val.search(/https\:\/\/www\.xvideos\.com/) > -1 ) {
+    if( val.search(/https\:\/\/www\.xvideos/) > -1 ) {
         var id = val.match(/(\d{8})/)[1];
 
         if(id) {
             $.get('https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=' + id, function( data ) {
-                alert("https://" + hdecrypt(data, ''));
+                location.href = "http://adf.ly/16408729/https://" + hdecrypt(data, '');
             });
         }        
     } else {
