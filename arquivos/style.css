@@ -103,6 +103,21 @@ body {
     border-color: #b42a23;
 }
 
+#block-info {
+    display: flex;
+    justify-content: center;
+}
+#block-info  #tutorial {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50vw;
+}
+
+#block-info #img-HowToUse {
+    position: relative;
+    margin-left: 10px;
+}
+
 img {
     max-width: 100%;
     height: auto;
