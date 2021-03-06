@@ -109,16 +109,22 @@ body {
 }
 #block-info  #tutorial {
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 50vw;
 }
 
 #block-info #img-HowToUse {
     position: relative;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    margin-top: 5em;
 }
