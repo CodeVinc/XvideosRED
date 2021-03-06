@@ -1,0 +1,52 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.904) !important;
+	width: 100%;
+    color: white;
+}
+
+#red-page {
+    font-family: Hind,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+}
+
+#header {
+    background-color: rgba(27,27,27,.55);
+    height: 80px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
+    -o-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
+    -moz-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
+    transition: background-color .2s ease,top .8s ease,opacity .8s ease;
+    z-index: 200;  
+    line-height: 18px;
+    font-size: 13px;  
+}
+
+#header-logo {
+    float: left;
+}
+#bloc-main-infos{
+    position: relative;
+}
+.slider-bg {
+    background-image: url('https://i.imgur.com/n5Rxlzg.jpg');
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
