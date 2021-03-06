@@ -132,6 +132,6 @@ footer {
 }
 @media (max-width: 750px) { 
     img { width: 90%; }
-    #shearchURL { width: 90%; }
+    #shearchURL { width: 90%; padding-left: 10px; }
     #tutorial { width: 80%; }
  }
