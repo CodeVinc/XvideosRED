@@ -31,6 +31,19 @@ async function decrypt() {
     }
 }
 
+window.addEventListener("scroll", (event) => {
+   
+    let scroll = this.scrollY;
+
+    if(scroll > 0) {
+        $('#header').css('opacity', '0');
+        $('#header').css('z-index', '0');
+    } else {
+        $('#header').css('opacity', '100');
+        $('#header').css('z-index', '100');
+    }
+});
+
 function start() {
 
 }

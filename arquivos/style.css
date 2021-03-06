@@ -2,6 +2,8 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -26,35 +28,45 @@ body {
     left: 0;
     right: 0;
     position: fixed;
-    top: 0;
     -webkit-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
     -o-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
     -moz-transition: background-color .2s ease,top .8s ease,opacity .8s ease;
     transition: background-color .2s ease,top .8s ease,opacity .8s ease;
-    z-index: 200;  
     line-height: 18px;
-    font-size: 13px;  
+    font-size: 13px; 
+    z-index: 100;
 }
 
 #header-logo {
     float: left;
 }
+
 #bloc-main-infos{
-    position: relative;
-}
-.slider-bg {
-    background-image: url('https://i.imgur.com/n5Rxlzg.jpg');
-    background-position: 50% 50%;
     position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#bloc-main-infos .slider-bg {
+    background-image: url('https://raw.githubusercontent.com/CodeVinc/XvideosRED/master/arquivos/n5Rxlzg.jpeg');
+    background-position: 50% 50%;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
+}
+
+#block-main-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 30vh;
+    margin-left: 48vw;
+    top: 0;
 }
 
 img {
