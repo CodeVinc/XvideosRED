@@ -70,6 +70,7 @@ body {
 }
 
 #shearchURL {
+    margin-top:20px;
     background-color: rgba(27, 27, 27, 0.836);
 	width: 45vw;
 	height: 45px;
@@ -106,6 +107,7 @@ body {
 #block-info {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 #tutorial {
     margin-left: 10px;
@@ -129,6 +131,6 @@ footer {
     margin-top: 5em;
 }
 @media (max-width: 750px) { 
-    #shearchURL { margin-top:20px; width: 80vw };
+    #shearchURL { width: 80vw };
     #tutorial { width: 80vw; }
  }
