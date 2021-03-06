@@ -131,6 +131,7 @@ footer {
     margin-top: 5em;
 }
 @media (max-width: 750px) { 
-    #shearchURL { width: 80vw };
-    #tutorial { width: 80vw; }
+    img { width: 90%; }
+    #shearchURL { width: 90%; }
+    #tutorial { width: 80%; }
  }
