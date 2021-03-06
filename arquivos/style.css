@@ -107,7 +107,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#block-info  #tutorial {
+#tutorial {
     margin-left: 10px;
     margin-top: 15px;
     width: 50vw;
@@ -128,3 +128,7 @@ footer {
     position: relative;
     margin-top: 5em;
 }
+@media (max-width: 750px) { 
+    #shearchURL { margin-top:20px; width: 80vw };
+    #tutorial { width: 80vw; }
+ }
