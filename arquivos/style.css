@@ -110,6 +110,7 @@ body {
     justify-content: center;
     margin-top: 15px;
 }
+
 #tutorial {
     margin-left: 10px;
     margin-top: 15px;
@@ -132,6 +133,41 @@ footer {
     margin-top: 5em;
     margin-bottom: 10px;
 }
+
+#ads-conteiner {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#ads-conteiner #ads-box {
+	margin: -50px auto;
+	color: #999;
+	background-color: #4a5464;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+#ads-conteiner #ads-box #ads-img {
+	position: relative;
+}
+
+#ads-conteiner #ads-close {
+	text-align: center;
+    padding: 0 10px;
+	position: relative;
+	color: red;
+	font-size: 12pt;
+	font-weight: 600;
+	float: right;
+	
+	border-radius: 5px;
+	left: 12px;
+	top: -2px;
+	cursor: pointer;
+}
+
 @media (max-width: 750px) { 
     img { width: 90%; }
     #shearchURL { width: 90%; padding-left: 10px; }
