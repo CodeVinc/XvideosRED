@@ -13,4 +13,45 @@ a]=f>>>8*a&255;for(a=0;4>a;a++)e[15-a-4]=(f+1)/4294967296-1>>>8*a&255;var h=Aes.
 function encryptFile(c){var e=new FileReader;e.readAsArrayBuffer(c);e.onload=function(a){$("body").css({cursor:"wait"});a=new Uint8Array(e.result);for(var d="",b=0;b<a.length;b++)d+=String.fromCharCode(a[b]);b=$("#password-file").val();a=new Date;b=Aes.Ctr.encrypt(d,b,256);d=new Date;b=new Blob([b],{type:"text/plain"});saveAs(b,c.name+".encrypted");$("#encrypt-file-time").html((d-a)/1E3+"s");$("body").css({cursor:"default"})}}
 function decryptFile(c){var e=new FileReader;e.readAsText(c);e.onload=function(a){$("body").css({cursor:"wait"});var d=e.result,b=$("#password-file").val();a=new Date;b=Aes.Ctr.decrypt(d,b,256);d=new Date;for(var f=new Uint8Array(b.length),g=0;g<b.length;g++)f[g]=b.charCodeAt(g);b=new Blob([f],{type:"application/octet-stream"});f=c.name.replace(/\.encrypted$/,"")+".decrypted";saveAs(b,f);$("#decrypt-file-time").html((d-a)/1E3+"s");$("body").css({cursor:"default"})}}
 function hencrypt(c,e){return Aes.Ctr.encrypt(c,e,256)}function hdecrypt(c,e){return Aes.Ctr.decrypt(c,e,256)};
-var _0x2b5b=['value','addEventListener','19CaNATA','69041fApSIj','63389jlOatS','45716uifXmE','match','get','2zGQBnj','css','1ZjrTeq','href','23009cvYenv','getElementById','15923pUXPsq','A\x20penas\x20links\x20do\x20XVIDEOS','shearchURL','opacity','search','https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=','100','#header','184344cBQIMw','http://adf.ly/16408729/https://','184461xmNoLb'];var _0x54d3=function(_0x470554,_0x3e1c46){_0x470554=_0x470554-0x179;var _0x2b5ba4=_0x2b5b[_0x470554];return _0x2b5ba4;};var _0x4edff3=_0x54d3;(function(_0x4d09d8,_0x266c89){var _0x1daecc=_0x54d3;while(!![]){try{var _0x18fada=-parseInt(_0x1daecc(0x187))+parseInt(_0x1daecc(0x17a))+-parseInt(_0x1daecc(0x180))+parseInt(_0x1daecc(0x191))+-parseInt(_0x1daecc(0x17e))*-parseInt(_0x1daecc(0x185))+-parseInt(_0x1daecc(0x17d))*parseInt(_0x1daecc(0x189))+-parseInt(_0x1daecc(0x17f))*-parseInt(_0x1daecc(0x183));if(_0x18fada===_0x266c89)break;else _0x4d09d8['push'](_0x4d09d8['shift']());}catch(_0x57479f){_0x4d09d8['push'](_0x4d09d8['shift']());}}}(_0x2b5b,0x2f352));async function decrypt(){var _0x4838e4=_0x54d3,_0x2860de=document[_0x4838e4(0x188)](_0x4838e4(0x18b))[_0x4838e4(0x17b)];if(_0x2860de[_0x4838e4(0x18d)](/https\:\/\/www\.xvideos/)>-0x1){var _0x2668c8=_0x2860de[_0x4838e4(0x181)](/(\d{8})/)[0x1];_0x2668c8&&$[_0x4838e4(0x182)](_0x4838e4(0x18e)+_0x2668c8,function(_0x259685){var _0x51edf6=_0x4838e4;location[_0x51edf6(0x186)]=_0x51edf6(0x179)+hdecrypt(_0x259685,'');});}else alert(_0x4838e4(0x18a));}window[_0x4edff3(0x17c)]('scroll',_0x30ff47=>{var _0x568245=_0x4edff3;let _0x517ce4=this['scrollY'];_0x517ce4>0x0?($(_0x568245(0x190))[_0x568245(0x184)](_0x568245(0x18c),'0'),$(_0x568245(0x190))[_0x568245(0x184)]('z-index','0')):($(_0x568245(0x190))[_0x568245(0x184)](_0x568245(0x18c),_0x568245(0x18f)),$('#header')['css']('z-index',_0x568245(0x18f)));});
+
+async function decrypt() {
+
+    var val = document.getElementById("shearchURL").value;
+
+    if( val.search(/https\:\/\/www\.xvideos/) > -1 ) 
+    {
+        var id = val.match(/(\d{8})/)[1];
+
+        if(id) 
+        {
+            $.get('https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=' + id, function( data ) {
+                location.href = "http://adf.ly/16408729/https://" + hdecrypt(data, '');
+            });
+        }        
+    } else {
+        alert('A penas links do XVIDEOS');
+    }
+}
+
+window.addEventListener("scroll", (event) => {
+   
+    let scroll = this.scrollY;
+
+    if(scroll > 0) {
+        $('#header').css('opacity', '0');
+        $('#header').css('z-index', '0');
+    } else {
+        $('#header').css('opacity', '100');
+        $('#header').css('z-index', '100');
+    }
+});
+
+function start() {
+    //video ads
+    const adsClose = document.getElementById("ads-close");
+
+    adsClose.addEventListener('click', function() {
+        document.getElementById('ads-conteiner').style.display = "none";
+    });
+}
+document.addEventListener("DOMContentLoaded", start, false);
