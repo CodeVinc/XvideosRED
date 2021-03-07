@@ -135,37 +135,28 @@ footer {
 }
 
 #ads-conteiner {
-	position: absolute;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-    z-index: 250;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
 }
 
 #ads-conteiner #ads-box {
+    width: 17em;
 	margin: -50px auto;
 	color: #999;
 	background-color: #4a5464;
-	padding: 5px 10px;
 	border-radius: 3px;
 }
 
-#ads-conteiner #ads-box #ads-img {
-	position: relative;
-}
-
 #ads-conteiner #ads-close {
-	text-align: center;
     padding: 0 10px;
 	position: relative;
 	color: red;
-	font-size: 12pt;
+	font-size: 11pt;
 	font-weight: 600;
 	float: right;
-	border-radius: 5px;
-	left: 12px;
-	top: -2px;
-	cursor: pointer;
+	top: 2px;
 }
 
 @media (max-width: 750px) { 
