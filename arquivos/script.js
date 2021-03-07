@@ -47,15 +47,5 @@ window.addEventListener("scroll", (event) => {
 });
 
 setTimeout(() => {
-    alert('xx');
+    $('#ads-conteiner').remove();
 }, 5000);
-
-function start() {
-
-    alert('oi');
-    setTimeout(() => {
-        $('#ads-conteiner').remove();
-    }, 5000);
-}
-
-document.addEventListener("DOMContentLoaded", start, false);
