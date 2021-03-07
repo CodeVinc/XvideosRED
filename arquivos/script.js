@@ -46,9 +46,15 @@ window.addEventListener("scroll", (event) => {
     }
 });
 
+setTimeout(() => {
+    alert('xx');
+}, 5000);
+
 function start() {
+
+    alert('oi');
     setTimeout(() => {
-        $('#ads-conteiner').remove()
+        $('#ads-conteiner').remove();
     }, 5000);
 }
 
