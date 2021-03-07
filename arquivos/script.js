@@ -48,7 +48,7 @@ window.addEventListener("scroll", (event) => {
 
 function start() {
     setTimeout(() => {
-        document.getElementById('ads-conteiner').style.display = "none";       
+        $('#ads-conteiner').css('display', 'none');    
     }, 5000);
 }
 
