@@ -12,6 +12,14 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none !important;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
 #red-page {
     font-family: Hind,sans-serif;
     font-size: 1rem;
@@ -38,6 +46,10 @@ body {
 
 #header-logo {
     float: left;
+}
+#head-pornhub {
+    float: right;
+    margin-right: 5vh;
 }
 
 #bloc-main-infos{
@@ -139,6 +151,7 @@ footer {
     width: 100%;
     text-align: center;
     z-index: 500;
+    display: flex;
 }
 
 #ads-conteiner #ads-box {
@@ -160,7 +173,9 @@ footer {
 }
 
 @media (max-width: 750px) { 
-    img { width: 90%; }
+    img { width: 85%; }
     #shearchURL { width: 90%; padding-left: 10px; }
     #tutorial { width: 80%; }
+    #head-pornhub { font-size: 9pt; width: 100%; display: inline-flex; justify-content: center; float:none; font-weight: 600!important; }
+    #header-logo img { display: none; z-index: 0;}
  }
