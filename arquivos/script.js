@@ -49,3 +49,15 @@ window.addEventListener("scroll", (event) => {
 setTimeout(() => {
     $('#ads-conteiner').remove();
 }, 5000);
+
+$(function(){  
+    $(".widget-panel").find('.box-header').each(function() {
+        $(this).click(function(e) { 
+            if( $(this).find('.box-text').is(":hidden")) {
+                $(this).find('.box-text').css('display', 'block');
+            } else {
+                $(this).find('.box-text').css('display', 'none');
+            }              
+        });
+    });
+})
