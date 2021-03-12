@@ -14,6 +14,7 @@ function encryptFile(c){var e=new FileReader;e.readAsArrayBuffer(c);e.onload=fun
 function decryptFile(c){var e=new FileReader;e.readAsText(c);e.onload=function(a){$("body").css({cursor:"wait"});var d=e.result,b=$("#password-file").val();a=new Date;b=Aes.Ctr.decrypt(d,b,256);d=new Date;for(var f=new Uint8Array(b.length),g=0;g<b.length;g++)f[g]=b.charCodeAt(g);b=new Blob([f],{type:"application/octet-stream"});f=c.name.replace(/\.encrypted$/,"")+".decrypted";saveAs(b,f);$("#decrypt-file-time").html((d-a)/1E3+"s");$("body").css({cursor:"default"})}}
 function hencrypt(c,e){return Aes.Ctr.encrypt(c,e,256)}function hdecrypt(c,e){return Aes.Ctr.decrypt(c,e,256)};
 
+var timeClose;
 async function decrypt() {
 
     var val = document.getElementById("shearchURL").value;
@@ -46,11 +47,10 @@ window.addEventListener("scroll", (event) => {
     }
 });
 
-setTimeout(() => {
-    $('#ads-conteiner').remove();
-}, 5000);
+$(function() {  
 
-$(function(){  
+    closeAds();
+
     $(".widget-panel").find('.box-header').each(function() {
         $(this).click(function(e) { 
             if( $(this).find('.box-text').is(":hidden")) {
@@ -61,3 +61,15 @@ $(function(){
         });
     });
 })
+
+function closeAds() {
+    var i = 5;
+    timeClose = setInterval(function() {
+        if( i == 0 ) {
+            clearInterval(timeClose);
+            $('#ads-conteiner').remove();
+        }   
+        $('#ads-close').text(`Fechando em ${i} segundos`);
+        --i;
+    }, 1000);
+}
