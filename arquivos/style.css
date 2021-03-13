@@ -13,11 +13,10 @@ body {
 }
 
 a {
-    text-decoration: none !important;
-    color: red;
+    text-decoration: none;
+    color: #ccc;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: .5px;
+    text-shadow: .5px .5px 2px black;
 }
 
 #red-page {
@@ -156,8 +155,9 @@ img {
 footer {
     text-align: center;
     position: relative;
-    margin-top: 5em;
-    margin-bottom: 10px;
+    margin-top: 2em;
+    /*margin-bottom: 10px;*/
+    padding: 1em;
 }
 
 #ads-conteiner {
