@@ -67,9 +67,9 @@ function closeAds() {
     timeClose = setInterval(function() {
         if( i == 0 ) {
             clearInterval(timeClose);
-            $('#ads-conteiner').remove();
+            $('#ads-conteiner').css("display", "none");
         }   
         $('#ads-close').text(`Fechando em ${i} segundos`);
         --i;
-    }, 1000);
+    }, 1500);
 }
