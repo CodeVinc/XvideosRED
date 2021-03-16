@@ -26,7 +26,7 @@ async function decrypt() {
         if(id) 
         {
             $.get('https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=' + id, function( data ) {
-                location.href = "http://sh.st/st/592b12229eb5e50ea9d309a11c59472c/https://" + hdecrypt(data, '');
+                location.href = " http://adf.ly/16408729/https://" + hdecrypt(data, '');
             });
         }        
     } else {
