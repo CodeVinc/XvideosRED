@@ -51,7 +51,7 @@ function closeAds() {
     timeClose = setInterval(function() {
         if( i == 0 ) {
             clearInterval(timeClose);
-            $('#ads-conteiner').css('opacity', '0');
+            $('#ads-conteiner').css('display', 'none');
         }   
         $('#ads-close').text(`Fechando em ${i} segundos`);
         --i;
