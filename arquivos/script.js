@@ -75,7 +75,7 @@ function closeAds() {
         }   
         $('#ads-close').text(`Fechando em ${i} segundos`);
         --i;
-    }, 1500);
+    }, 1000);
 }
 
 window.mobileCheck = function() {
