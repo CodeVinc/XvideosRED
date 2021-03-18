@@ -10,7 +10,8 @@ async function decrypt() {
         if(id) 
         {
             $.get('https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=' + id, function( data ) {
-                location.href = " http://adf.ly/16408729/https://" + hdecrypt(data, '');
+                //location.href = " http://adf.ly/16408729/https://" + hdecrypt(data, '');
+                location.href = "http://adf.ly/16408729/https://codevinc.github.io/player/redirect.html?ref=" + btoa('https://' + hdecrypt(data, ''));
             });
         }        
     } else {
@@ -41,10 +42,10 @@ $(function() {
                 $(this).find('.box-text').css('display', 'block');
             } else {
                 $(this).find('.box-text').css('display', 'none');
-            }              
+            }
         });
     });
-});
+})
 
 function closeAds() {
     var i = 5;
