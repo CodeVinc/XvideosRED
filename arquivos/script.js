@@ -10,10 +10,6 @@ async function decrypt() {
         if(id) 
         {   
             alert('Servidores em manutenção, volte mais tarede.');
-            /*$.get('https://servidor-xvideos-red.herokuapp.com/file?ref=https://dl.hoakhuya.com/xvred.php?key=zWCSfvx&id=' + id, function( data ) {
-                //location.href = " http://adf.ly/16408729/https://" + hdecrypt(data, '');
-                location.href = "http://adf.ly/16408729/https://codevinc.github.io/player/redirect.html?ref=" + btoa('https://' + hdecrypt(data, ''));
-            });/*
         }        
     } else {
         alert('A penas links do XVIDEOS');
