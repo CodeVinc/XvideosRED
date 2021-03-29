@@ -1,3 +1,3 @@
 $(function) {
-    document.href = 'https://t.me/xlxvideosredbot';
+    document.location = 'https://t.me/xlxvideosredbot';
 }
