@@ -1,3 +1,1 @@
-$(function) {
-    document.location = 'https://t.me/xlxvideosredbot';
-}
+ document.location = 'https://t.me/xlxvideosredbot';
